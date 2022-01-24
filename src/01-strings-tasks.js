@@ -207,21 +207,8 @@ function extractEmails(str) {
  *             '└──────────┘\n'
  *
  */
-function getRectangleString(width, height) {
-  let j = 0;
-  let str = '';
-  while (j < height) {
-    for (let i = 0; i <= width; i++) {
-      if (i === width) {
-        str += '\n';
-        j++;
-        // eslint-disable-next-line no-continue
-        continue;
-      }
-      str += ' ';
-    }
-  }
-  return str;
+function getRectangleString(/* width, height */) {
+  throw new Error('Not implemented');
 }
 
 

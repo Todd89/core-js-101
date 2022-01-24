@@ -178,15 +178,9 @@ function getParallelepipedDiagonal(a, b, c) {
  *   1678, 2  => 1700
  *   1678, 3  => 2000
  */
-function roundToPowerOfTen(num, pow) {
-  const x = num.toString(10).split('').reverse();
-  for (let i = 0; i < pow; i += 1) {
-    x[i] = '0';
-  }
-  const z = Number(x.reverse().join(''));
-  return z;
+function roundToPowerOfTen(/* num, pow */) {
+  throw new Error('Not implemented');
 }
-
 /**
  * Returns true is the number is prime; otherwise false.
  * See: https://en.wikipedia.org/wiki/Primality_test
